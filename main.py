@@ -8,7 +8,7 @@ app.secret_key = "andhisnameisjohncena"
 
 @app.route("/")
 def home(): 
-    return "<h3> You can make 3 different calls :</h3>  <br> <h4> Get sum of list of numbers : add the following to the URL -> &nbsp; <u>/sum/ls=[]</u> #Enter list of numbers ',' seperated in square bracket <br><br> Get average of list of numbers : add the following to the URL -> &nbsp; <u> /avg/ls=[]</u> #Enter list of numbers ',' seperated in square bracket<br><br> Find if given value is a palindrome : add the following to the URL -> &nbsp; <u> /palin/ls=[]</u> #Enter value to be checked in square bracket <br> Example : <br> https://first-rest-api-sp.herokuapp.com/sum/ls=[1,2,3] <br> https://first-rest-api-sp.herokuapp.com/avg/ls=[1,2,3,55,66,82,67] <br> </h4>"
+    return "<h3> You can make 3 different calls :</h3>  <br> <h4> Get sum of list of numbers : add the following to the URL -> &nbsp; <u>/sum/ls=[]</u> #Enter list of numbers ',' seperated in square bracket <br><br> Get average of list of numbers : add the following to the URL -> &nbsp; <u> /avg/ls=[]</u> #Enter list of numbers ',' seperated in square bracket<br><br> Find if given value is a palindrome : add the following to the URL -> &nbsp; <u> /palin/ls=[]</u> #Enter value to be checked in square bracket <br><br><br> Example : <br><br> https://first-rest-api-sp.herokuapp.com/sum/ls=[1,2,3] <br><br> https://first-rest-api-sp.herokuapp.com/avg/ls=[1,2,3,55,66,82,67] <br><br> https://first-rest-api-sp.herokuapp.com/palin/ls=[1234554321]</h4>"
 
 @app.route("/sum/ls=[<lis2>]")
 def addition(lis2):
