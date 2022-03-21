@@ -4,9 +4,8 @@ Simple Rest API implementation to get sum, average and know whether an input is 
 
 Home Page : https://first-rest-api-sp.herokuapp.com/
 
-URL to get sum of list of numbers : https://first-rest-api-sp.herokuapp.com/sum/ls=[list_of_numbers_','_seperated]
+URL to get sum of list of numbers : https://first-rest-api-sp.herokuapp.com/sum/ls=[]   # Enter list of numbers ','seperated in square brackets
 
-URL to get average of list of numbers : https://first-rest-api-sp.herokuapp.com/avg/ls=[list_of_numbers_','_seperated]
-
-URL to check whther a given string or number is palindrome : https://first-rest-api-sp.herokuapp.com/palin/ls=[value_to_be_checked]
-
+URL to get average of list of numbers : https://first-rest-api-sp.herokuapp.com/avg/ls=[]    # Enter list of numbers ','seperated in square brackets
+ 
+URL to check whther a given string or number is palindrome : https://first-rest-api-sp.herokuapp.com/palin/ls=[]    # Enter value to be checked in square brackets
