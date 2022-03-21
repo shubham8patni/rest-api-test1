@@ -8,7 +8,7 @@ app.secret_key = "andhisnameisjohncena"
 
 @app.route("/")
 def home(): 
-    return "Home"
+    return "<h3> You can make 3 different calls :</h3> <br> <h4> get sum of list of numbers : add the following to the URL -> /sum/ls=[list of numbers ',' seperated] <br> get average of list of numbers : add the following to the URL -> /avg/ls=[list of numbers ',' seperated]</h4> <br> Find if given value is a palindrome : add the following to the URL -> /palin/ls=[value to be checked]"
 
 @app.route("/sum/ls=[<lis2>]")
 def addition(lis2):
