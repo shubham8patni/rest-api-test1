@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %} Home Page {% endblock %}
+{% block content %}    
+  {% with message = get_flashed_messages() %}
+    {% if message %}
+        {% for i in message %}
+          <p>{{i}}</p>
+        {% endfor %}
+    {% endif %}
+  {% endwith %}
+  
+        <h2>Welcome</h2>
+        <!-- {% for i in name %} <!-- This is the format to write python directly in html file in flask. -->
+            <!-- {% if i == "mtech" %}
+                <p>course : {{i}}</p>
+            {% else %}
+                <p>{{i}}</p>
+            {% endif %}
+        {% endfor %} -->
+
+        <div class="container pt-5">
+          
+          <form action="#" method="post" style=" padding: 5%; ">
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="pb-2">List of numbers (more than 1 number)</label>             
+                <input type="text" class="form-control" name='usr-list' placeholder="1,2,3,6,5,4" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
+              </div>
+              
+              <button type="submit" class="btn btn-primary mt-5">Submit</button>
+          </form>
+      </div>
+      <div class="container pt-5">
+        <div class="p-1">
+          <h3 class="text-center">Solution : {{solution}}</h3>
+        </div>
+        
+      </div>
+      <!-- {% if email %}
+        <h2>Your Email is: {{email}}</h2>
+      {% else %}
+        <p></p>
+      {% endif %} -->
+      
+{% endblock %}
